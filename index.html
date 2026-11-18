@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Conoce la historia, el origen, los materiales y el funcionamiento de una incubadora de huevos.">
+<title>Incubadora de Huevos | Ciencia y Tecnología</title>
+<style>
+:root{--navy:#10243a;--blue:#176b87;--cyan:#42b6bd;--gold:#e9b85b;--ink:#243447;--muted:#64748b;--paper:#f5f8fb;--white:#fff}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+header{position:sticky;top:0;z-index:10;background:rgba(16,36,58,.96);backdrop-filter:blur(12px);color:white;box-shadow:0 5px 24px #0b1b2b22}
+.nav{max-width:1160px;margin:auto;padding:0 24px;min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.2px;color:white;text-decoration:none}
+.brand-mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),var(--gold));display:grid;place-items:center;font-size:21px}
+nav{display:flex;gap:23px;align-items:center;flex-wrap:wrap}
+nav a{color:#e7f0f7;text-decoration:none;font-size:.9rem;font-weight:600;transition:.2s}
+nav a:hover{color:var(--gold)}
+.hero{background:linear-gradient(115deg,#10243a 0%,#164d68 58%,#238a91 100%);color:white;overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid #ffffff22;border-radius:50%;right:-100px;top:-160px;box-shadow:0 0 0 45px #ffffff09,0 0 0 95px #ffffff07}
+.hero-inner{max-width:1160px;margin:auto;padding:94px 24px 100px;display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center;position:relative;z-index:1}
+.eyebrow{color:#f4cb78;text-transform:uppercase;letter-spacing:2px;font-size:.76rem;font-weight:800}
+h1{font-size:clamp(2.5rem,5vw,4.7rem);line-height:1.06;margin:16px 0 22px;letter-spacing:-1.8px}
+.hero p{max-width:610px;color:#d8e8f0;font-size:1.1rem}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:750;transition:.2s}
+.btn-primary{background:var(--gold);color:#182b3b}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 20px #0003}
+.btn-outline{border:1px solid #ffffff70;color:white}.btn-outline:hover{background:#ffffff15}
+.hero-art{min-height:330px;display:grid;place-items:center}
+.incubator{width:min(100%,390px);height:270px;border:8px solid #d7e4e9;border-radius:28px;background:linear-gradient(145deg,#dcebf0,#9dbbc4);box-shadow:0 28px 55px #07182766;position:relative;padding:20px}
+.incubator:before{content:"";position:absolute;inset:18px;border:3px solid #668a98;border-radius:15px;background:linear-gradient(135deg,#ffffff88,#7da8b455)}
+.incubator-top{position:absolute;top:-28px;left:20%;width:60%;height:24px;border-radius:12px 12px 4px 4px;background:#edf4f5;border:3px solid #8ba8b1}
+.egg-row{position:absolute;z-index:2;bottom:44px;left:0;right:0;display:flex;justify-content:center;gap:13px}
+.egg{width:48px;height:64px;border-radius:50% 50% 46% 46%;background:linear-gradient(110deg,#fff8e8,#e9d5ad);box-shadow:inset -5px -3px 7px #b99b6c55,0 7px 9px #31515c33;transform:rotate(-5deg)}
+.egg:nth-child(even){transform:rotate(6deg);height:59px;margin-top:6px}
+.display{position:absolute;z-index:3;top:37px;right:37px;background:#153847;color:#8df3d6;padding:8px 12px;border-radius:7px;font:700 14px monospace;box-shadow:0 3px 8px #0003}
+.vent{position:absolute;z-index:3;top:45px;left:38px;width:52px;height:8px;border-radius:9px;background:#7798a2;box-shadow:0 15px #7798a2,0 30px #7798a2}
+main{max-width:1160px;margin:auto;padding:0 24px}
+section{padding:82px 0;scroll-margin-top:78px}
+.section-head{max-width:720px;margin-bottom:34px}
+.kicker{color:var(--blue);font-size:.76rem;text-transform:uppercase;letter-spacing:1.8px;font-weight:850}
+h2{color:var(--navy);font-size:clamp(2rem,3.4vw,2.8rem);line-height:1.15;margin:9px 0 13px;letter-spacing:-.7px}
+.lead{color:var(--muted);font-size:1.06rem;margin:0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{background:white;border:1px solid #e5edf2;border-radius:18px;padding:27px;box-shadow:0 10px 30px #17324a08}
+.panel h3{color:var(--navy);margin:0 0 9px;font-size:1.2rem}
+.panel p{margin:0;color:#5c6d7d}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.time-card{border-top:3px solid var(--cyan);background:white;padding:22px;border-radius:0 0 14px 14px}
+.time-card strong{display:block;color:var(--blue);font-size:1.35rem;margin-bottom:8px}
+.materials{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.material{background:white;border:1px solid #e5edf2;border-radius:16px;padding:22px;min-height:155px}
+.material .ico{font-size:1.8rem;margin-bottom:10px}
+.material h3{font-size:1.02rem;color:var(--navy);margin:0 0 5px}
+.material p{font-size:.92rem;color:var(--muted);margin:0}
+.note{margin-top:22px;padding:18px 20px;border-left:4px solid var(--gold);background:#fff8e9;border-radius:0 12px 12px 0;color:#66512d}
+.steps{counter-reset:step;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step{background:white;padding:23px;border-radius:16px;border:1px solid #e5edf2}
+.step:before{counter-increment:step;content:"0" counter(step);display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:#e6f5f4;color:#176b70;font-weight:850;margin-bottom:14px}
+.step h3{margin:0 0 7px;color:var(--navy);font-size:1.02rem}
+.step p{margin:0;color:var(--muted);font-size:.94rem}
+.purpose{background:linear-gradient(135deg,#10243a,#174f68);color:white;border-radius:24px;padding:38px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.purpose h2{color:white}.purpose p{color:#d7e6ed}
+.purpose ul{padding-left:20px;color:#e7f0f4}.purpose li{margin:8px 0}
+.stat{border:1px solid #ffffff35;border-radius:17px;padding:22px;background:#ffffff0c}
+.stat b{font-size:2.3rem;color:var(--gold);display:block}
+footer{background:#0b1b2b;color:#b8c8d4;text-align:center;padding:30px 20px;font-size:.9rem}
+footer strong{color:white}
+@media(max-width:800px){.hero-inner{grid-template-columns:1fr;padding-top:70px}.hero-art{min-height:260px}.grid-2,.purpose{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.materials{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}nav{gap:12px}.nav{padding:12px 18px}nav a{font-size:.8rem}}
+@media(max-width:520px){.nav{align-items:flex-start;flex-direction:column;gap:8px}.hero-inner,main{padding-left:18px;padding-right:18px}.hero-inner{padding-top:55px;padding-bottom:65px}.materials,.steps{grid-template-columns:1fr}.incubator{transform:scale(.85);margin:-15px 0}.purpose{padding:26px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="nav">
+  <a class="brand" href="#inicio"><span class="brand-mark">🥚</span><span>INCUBACIÓN<br><small style="font-weight:500;color:#bcd0dc">Proyecto de incubadora</small></span></a>
+  <nav aria-label="Navegación principal">
+   <a href="#resena">Reseña</a><a href="#historia">Historia</a><a href="#origen">Origen</a><a href="#materiales">Materiales</a><a href="#funcionamiento">Funcionamiento</a><a href="#utilidad">¿Para qué sirve?</a>
+  </nav>
+ </div>
+</header>
+<div class="hero" id="inicio">
+ <div class="hero-inner">
+  <div>
+   <div class="eyebrow">Tecnología aplicada a la avicultura</div>
+   <h1>Incubadora<br>de huevos</h1>
+   <p>Proyecto de construcción de una incubadora para huevos de gallina, pato y codorniz, que busca reproducir las condiciones necesarias para el desarrollo del embrión mediante el control de la temperatura, la humedad y la ventilación.</p>
+   <div class="actions"><a class="btn btn-primary" href="#historia">Conocer su historia</a><a class="btn btn-outline" href="#materiales">Ver materiales</a></div>
+  </div>
+  <div class="hero-art" aria-label="Ilustración de una incubadora con huevos">
+   <div class="incubator"><div class="incubator-top"></div><div class="vent"></div><div class="display">37.5°C</div><div class="egg-row"><div class="egg"></div><div class="egg"></div><div class="egg"></div><div class="egg"></div></div></div>
+  </div>
+ </div>
+</div>
+<main>
+<section id="historia">
+ <div class="section-head"><div class="kicker">01 · Antecedentes</div><h2>Historia de la incubadora de huevos</h2><p class="lead">La incubación artificial nació de la necesidad de reproducir, mediante tecnología, el calor y las condiciones que una gallina proporciona de forma natural.</p></div>
+ <div class="grid-2">
+  <article class="panel"><h3>De la naturaleza a la tecnología</h3><p>Durante siglos, las aves incubaron sus huevos de manera natural. En distintas civilizaciones también se desarrollaron métodos artesanales para mantenerlos calientes y favorecer su nacimiento. Uno de los antecedentes más conocidos se encuentra en los antiguos sistemas de incubación de Egipto.</p></article>
+  <article class="panel"><h3>La incubación moderna</h3><p>Con el avance de la ciencia, especialmente desde los siglos XVIII y XIX, se construyeron equipos capaces de regular mejor el calor. Más adelante se incorporaron termostatos, ventiladores, sensores y mecanismos automáticos para controlar el proceso con mayor precisión.</p></article>
+ </div>
+ <div class="timeline">
+  <div class="time-card"><strong>Antigüedad</strong><p>Se utilizaban espacios y hornos especiales para conservar el calor de los huevos.</p></div>
+  <div class="time-card"><strong>Siglos XVIII–XIX</strong><p>Se impulsaron diseños experimentales y mejoras en el control de la temperatura.</p></div>
+  <div class="time-card"><strong>Actualidad</strong><p>Existen incubadoras digitales, automáticas y de diferentes capacidades.</p></div>
+ </div>
+</section>
+<section id="resena">
+ <div class="section-head"><div class="kicker">Reseña del proyecto</div><h2>Una incubadora para tres especies</h2><p class="lead">Este proyecto consiste en diseñar y construir una incubadora destinada a la incubación de huevos de gallina, pato y codorniz. El equipo buscará mantener condiciones controladas de temperatura, humedad y ventilación, ajustadas a las necesidades de cada especie.</p></div>
+ <div class="grid-2">
+  <article class="panel"><h3>Gallinas</h3><p>La incubadora permitirá incubar huevos de gallina y acompañar su desarrollo hasta la eclosión, con un periodo habitual cercano a los 21 días.</p></article>
+  <article class="panel"><h3>Patos y codornices</h3><p>También estará destinada a huevos de pato y codorniz. Como cada especie requiere parámetros y tiempos diferentes, se deberán realizar los ajustes correspondientes antes de cada ciclo.</p></article>
+ </div>
+</section>
+<section id="origen">
+ <div class="section-head"><div class="kicker">02 · ¿Cómo surgió?</div><h2>¿Cómo surgió la idea de crearla?</h2><p class="lead">La incubadora apareció como respuesta a un desafío práctico: conseguir que los huevos se desarrollaran sin depender exclusivamente de una gallina clueca.</p></div>
+ <div class="grid-2">
+  <article class="panel"><h3>Una necesidad de producción</h3><p>En la crianza de aves, la incubación natural limita la cantidad de huevos que una gallina puede cuidar al mismo tiempo. La incubación artificial permitió ampliar la producción y planificar nacimientos durante el año.</p></article>
+  <article class="panel"><h3>Una idea basada en la observación</h3><p>Se estudió qué condiciones ofrece el nido: calor constante, humedad adecuada, intercambio de aire y movimiento periódico de los huevos. Los primeros equipos intentaron reproducir esas condiciones mediante fuentes de calor y, posteriormente, controles mecánicos y electrónicos.</p></article>
+ </div>
+</section>
+<section id="materiales">
+ <div class="section-head"><div class="kicker">03 · Construcción</div><h2>Materiales para elaborar una incubadora</h2><p class="lead">Para un modelo didáctico de pequeña capacidad se pueden utilizar los siguientes materiales. La selección debe adaptarse al tamaño y al diseño del equipo.</p></div>
+ <div class="materials">
+  <article class="material"><div class="ico">📦</div><h3>Caja aislante</h3><p>De tecnopor, madera o material resistente, para conservar el calor.</p></article>
+  <article class="material"><div class="ico">🌡️</div><h3>Termostato y termómetro</h3><p>Permiten medir y regular la temperatura interior.</p></article>
+  <article class="material"><div class="ico">💧</div><h3>Recipiente con agua</h3><p>Ayuda a mantener la humedad necesaria dentro de la cámara.</p></article>
+  <article class="material"><div class="ico">💡</div><h3>Fuente de calor</h3><p>Elemento calefactor apropiado y controlado para el tamaño de la caja.</p></article>
+  <article class="material"><div class="ico">🌀</div><h3>Ventilador pequeño</h3><p>Distribuye el aire y evita diferencias grandes de temperatura.</p></article>
+  <article class="material"><div class="ico">🥚</div><h3>Rejilla o bandeja</h3><p>Sostiene los huevos y permite que circule el aire a su alrededor.</p></article>
+  <article class="material"><div class="ico">🔌</div><h3>Cables y conexiones</h3><p>Conectores y componentes eléctricos adecuados, instalados con protección.</p></article>
+  <article class="material"><div class="ico">🪟</div><h3>Ventana de observación</h3><p>Una cubierta transparente permite revisar el interior sin abrir la caja.</p></article>
+  <article class="material"><div class="ico">🔄</div><h3>Sistema de volteo</h3><p>Puede ser manual o automático para girar los huevos periódicamente.</p></article>
+ </div>
+ <div class="note"><strong>Importante:</strong> trabajar con electricidad y fuentes de calor requiere supervisión de una persona capacitada. Aísla las conexiones, evita el contacto con el agua y no dejes el equipo funcionando sin vigilancia durante las pruebas.</div>
+</section>
+<section id="funcionamiento">
+ <div class="section-head"><div class="kicker">04 · Proceso</div><h2>¿Cómo funciona?</h2><p class="lead">La incubadora crea un ambiente controlado. En huevos de gallina, como referencia general, el proceso dura alrededor de 21 días; los parámetros exactos dependen de la especie y del equipo.</p></div>
+ <div class="steps">
+  <article class="step"><h3>Preparar</h3><p>Limpiar y revisar el equipo. Comprobar que la temperatura y la humedad se estabilicen antes de colocar los huevos.</p></article>
+  <article class="step"><h3>Controlar</h3><p>Mantener temperatura, humedad y ventilación dentro de los rangos recomendados para la especie.</p></article>
+  <article class="step"><h3>Voltear</h3><p>Girar los huevos de forma regular durante la etapa indicada para evitar que el embrión se adhiera a la membrana.</p></article>
+  <article class="step"><h3>Nacimiento</h3><p>Al acercarse la eclosión, detener el volteo y ajustar las condiciones según la guía de incubación correspondiente.</p></article>
+ </div>
+</section>
+<section id="utilidad">
+ <div class="purpose">
+  <div><div class="eyebrow">05 · Aplicaciones</div><h2>¿Para qué sirve una incubadora?</h2><p>Sirve para incubar huevos de aves de manera artificial, proporcionando un entorno estable para el desarrollo embrionario y facilitando la planificación de nacimientos.</p>
+   <ul><li>Apoya la reproducción y crianza de aves.</li><li>Permite incubar varios huevos al mismo tiempo.</li><li>Ayuda a controlar las condiciones del proceso.</li><li>Se utiliza en granjas, criaderos, centros educativos e investigación.</li></ul>
+  </div>
+  <div class="stat"><b>≈ 21 días</b><p>Es el periodo de incubación habitual del huevo de gallina. Otras especies tienen tiempos y necesidades diferentes.</p><p style="font-size:.86rem;color:#c3d6df">El éxito depende también de la fertilidad, la calidad y el almacenamiento previo de los huevos, además del manejo correcto.</p></div>
+ </div>
+</section>
+<section>
+ <div class="section-head"><div class="kicker">Conclusión</div><h2>Una herramienta que combina ciencia y producción</h2><p class="lead">La incubadora de huevos representa el avance de la observación y la tecnología aplicadas a la crianza de aves. Al controlar las condiciones ambientales, hace posible un proceso de incubación más organizado. Su uso responsable requiere conocer las necesidades de cada especie y verificar continuamente el funcionamiento del equipo.</p></div>
+</section>
+</main>
+<footer><strong>PROYECTO DE INCUBADORA</strong><br>Incubadora diseñada para gallinas, patos y codornices</footer>
+</body>
+</html>
